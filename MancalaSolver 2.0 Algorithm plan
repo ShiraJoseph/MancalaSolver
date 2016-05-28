@@ -5,6 +5,7 @@ Class Bin
 Class Sequence
   ArrayList<int> record = new ArrayList<int>
   String layout
+  int potTotal
   
 Class MancalaSolver{
   int startingBin=0;
