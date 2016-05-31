@@ -1,0 +1,59 @@
+package mancalaPackage;
+
+import java.util.ArrayList;
+
+public class MancalaSolver {
+	public static int startingBin=0;
+	public static Bin[] bins = new Bin[13];
+	public static ArrayList<Sequence> sequences = new ArrayList<Sequence>();
+
+	public static void main(String[] args) {		  
+		    setLayout("4 4 4 4 4 4 0 4 4 4 4 4 4");
+		    findStartingBin(0);
+		    moveStones();
+	}
+		  
+	public static void setLayout(String layout){
+		String[] stoneAmount=layout.split(" ");	
+		for(int i=0;i<13;i++){
+				bins[i].setStones(Integer.valueOf(stoneAmount[i]));				
+		}
+	}
+		  
+	public static Boolean findStartingBin(int start){
+//		    Find the first bin from start that isn't empty and write down its index on the current line and make it the starting bin. return true
+//		    if don't find non-empty bin before pot, 
+				return false;
+	}
+		  
+	public static void moveStones(){
+//		    Pick up the stones from starting bin. 
+//		    Put 1 stone in the next bin, 1 in the bin after that, etcetera until hand is empty. That last bin becomes the starting bin
+		    
+//		    if (starting bin is the pot) {
+//		      write down the layout below the last index of the sequence
+//		      findStartingBin(0);
+//		    }else if (starting bin has 1 stone){
+//		      closeSequenceAndOpenNext();
+//		    }else{
+//		      moveStones();
+//		    }
+	}
+		  
+	public static void closeSequenceAndOpenNext(){
+//		    remove the one stone from the startingBin and the stones from the bin opposite and add them to the pot. 
+//		    Write down the pot total for that sequence
+//		    go to the next sequence and write down the same exact sequence and layouts as the line before
+	}
+		  
+	public static void retractMoves(){
+//		    setLayout(string of last layout recorded);
+//		    if (findStartingBin(index listed at the end of the line + 1)){
+//		      replace the last index written down with this new bin's index and assign it to startingBin 
+//		      moveStones();
+//		    }else {
+//		      remove the last index written on the line and the last layout before that 
+//		      retractMoves();
+//		    }
+	}
+}
