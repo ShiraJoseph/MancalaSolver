@@ -4,7 +4,7 @@ Find the first bin that isn't empty and write down its index on the current line
 B
 Pick up the stones from starting bin. 
 Put 1 stone in the next bin, 1 in the bin after that, etcetera until hand is empty. That last bin becomes the starting bin
-If it the starting bin isthe pot, write down the layout below the last index on the line and repeat from A
+If the starting bin is the pot, write down the layout below the last index on the line and repeat from A
 Else if the starting bin has 1 stone, remove its one stone and the stones from the bin opposite and add them to the pot. Write down the pot total for that sequence
 go to the next line and write down the same exact sequence and layouts as the line before
 Else repeat from B
